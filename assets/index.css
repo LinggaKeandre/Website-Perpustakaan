@@ -1,0 +1,115 @@
+/* Mengatur latar belakang dengan gradasi dan font modern */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontainer form dengan efek animasi dan bayangan lembut */
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Judul halaman */
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Label form */
+label {
+    text-align: left;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling input untuk teks dan password */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+}
+
+/* Styling tombol default (digunakan untuk tombol login) */
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Tombol login diperlebar dan diberi gradasi oranye */
+.btn-login {
+    width: 100%;
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: #fff;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Tombol guest login diubah menjadi teks biasa tanpa hiasan */
+.btn-guest {
+    background: none;
+    border: none;
+    color: #666;
+    padding: 10px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Styling untuk pesan error agar mudah terlihat */
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}

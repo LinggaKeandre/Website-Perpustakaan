@@ -1,0 +1,125 @@
+/* Impor font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* Background gradasi yang konsisten */
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+}
+
+/* Container utama dengan tampilan modern */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease;
+    position: relative;
+}
+
+/* Tombol Kembali ke Dashboard */
+.back-link {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.back-link a {
+    color: #66a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animasi muncul ke atas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Judul halaman */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Pesan error */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling form */
+form {
+    display: block;
+}
+
+label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+}
+
+/* Preview container */
+.preview-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.preview-container img {
+    max-width: 100%;
+    max-height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Tombol submit dengan gaya modern */
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,178 @@
+/* Impor font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* Latar belakang gradasi seperti halaman login */
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+}
+
+/* Container utama dashboard dengan efek bayangan dan animasi */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Animasi muncul ke atas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Judul dan subjudul */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Link navigasi */
+a {
+    color: #66a6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol umum dengan transisi */
+button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Buat Laporan dengan gradasi oranye */
+.btn-report {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: #fff;
+}
+
+/* Tombol Tambah Buku (jika ada) dengan gradasi hijau */
+.btn-add {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: #fff;
+}
+
+/* Tombol Logout */
+.btn-logout {
+    background: linear-gradient(135deg, #f44336, #e57373);
+    color: #fff;
+}
+
+/* Styling form pencarian dan tombol kontrol musik */
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+.search-container input[type="text"]:focus {
+    border-color: #66a6ff;
+    outline: none;
+}
+
+/* Tombol Cari dan Refresh dengan warna berbeda agar tidak sama dengan background */
+.search-container form button,
+.search-container form a button {
+    background: linear-gradient(135deg, #1976d2, #2196f3);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-right: 10px;
+}
+.search-container form button:hover,
+.search-container form a button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol kontrol musik (Mute dan Mulai Ulang) */
+#mute-button, #restart-button {
+    background: linear-gradient(135deg, #9c27b0, #ba68c8);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Styling tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #333;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling gambar cover buku */
+table img {
+    border-radius: 5px;
+}
+
+/* Tombol aksi di dalam tabel (Edit, Hapus) */
+.table-action a {
+    color: #66a6ff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.table-action a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol ??? (misalnya tombol kejutan) */
+.btn-surprise {
+    background: linear-gradient(135deg, #e91e63, #f06292);
+    color: #fff;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
